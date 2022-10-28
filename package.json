@@ -1,6 +1,5 @@
 {
-  "name": "@edx/frontend-build",
-  "version": "1.0.0-semantically-released",
+  "name": "@cucwd-prod/frontend-build",
   "description": "Build tools, setup and config for frontend apps",
   "publishConfig": {
     "access": "public"
@@ -15,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edx/frontend-build.git"
+    "url": "git+https://github.com/CUCWD/frontend-build.git"
   },
   "keywords": [],
-  "author": "edX",
+  "author": "edX, CUCWD",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/edx/frontend-build/issues"
+    "url": "https://github.com/CUCWD/frontend-build/issues"
   },
-  "homepage": "https://github.com/edx/frontend-build#readme",
+  "homepage": "https://github.com/CUCWD/frontend-build#readme",
   "dependencies": {
     "@babel/cli": "7.16.0",
     "@babel/core": "7.16.0",
