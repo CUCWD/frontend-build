@@ -7,6 +7,9 @@ on:
   release:
     types: [created]
 
+env:
+  NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
 jobs:
   test:
     runs-on: ubuntu-20.04
@@ -55,7 +58,7 @@ jobs:
 
       - name: Lint
         run: npm run lint
-        
+
       - name: Test
         run: npm run test
         
@@ -71,5 +74,3 @@ jobs:
           cp -f package.json .npmignore .npmrc ./dist
           cd ./dist
           npm publish --userconfig .npmrc --registry https://registry.npmjs.org/
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
